@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tech Store</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: #f9fafb;
+        color: #333;
+      }
+
+      header {
+        background: linear-gradient(135deg, #1e40af, #2563eb);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      header p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+
+      nav {
+        background: #1e293b;
+        text-align: center;
+        padding: 12px;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: #60a5fa;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        text-align: center;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+
+      .card h2 {
+        font-size: 1.2rem;
+        margin: 15px 0 10px;
+        color: #2563eb;
+      }
+
+      .card p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      .price {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #1e40af;
+        margin: 10px 0;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #2563eb;
+        color: white;
+        padding: 8px 15px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+
+      .btn:hover {
+        background: #1d4ed8;
+      }
+
+      footer {
+        background: #1e293b;
+        color: #d1d5db;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to Tech Store</h1>
+      <p>Find the best gadgets at affordable prices!</p>
+    </header>
+
+    <nav>
+      <a href="#phones">Phones</a>
+      <a href="#laptops">Laptops</a>
+      <a href="#accessories">Accessories</a>
+      <!-- <a href="#contact">Contact</a> -->
+    </nav>
+
+    <div class="container">
+      <div class="card" id="phones">
+        <img src="./4.jpg" alt="Phone" />
+        <h2>Smartphone Pro</h2>
+        <p>High-performance phone with amazing camera.</p>
+        <p class="price">$499</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <div class="card" id="laptops">
+        <img src="./3.jpg" alt="Laptop" />
+        <h2>Ultra Laptop</h2>
+        <p>Lightweight laptop for work and play.</p>
+        <p class="price">$899</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <div class="card" id="accessories">
+        <img src="./2.jpg" alt="Headphones" />
+        <h2>Wireless Headphones</h2>
+        <p>Crystal-clear sound with noise cancellation.</p>
+        <p class="price">$199</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+
+      <div class="card">
+        <img src="./1.jpg" alt="Smartwatch" />
+        <h2>Smartwatch X</h2>
+        <p>Stay connected on the go with fitness tracking.</p>
+        <p class="price">$149</p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>© 2025 Tech Store | Designed for Practice</p>
+    </footer>
+  </body>
+</html>
